@@ -22,6 +22,7 @@ mongoose.connect(process.env.MONGO_URI)
     .catch((error) => console.log(error));
 
 const users = {};
+
 // Socket.io events
 io.on("connection", (socket) => {
     console.log("User connected: ", socket.id);
